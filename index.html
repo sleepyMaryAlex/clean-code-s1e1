@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -11,46 +11,50 @@
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
-      <div class="add-section">
+      <section class="add-section">
         <h3 class="add-section__title">Add Item</h3>
         <div class="add-section__container">
           <input id="new-task"class="add-section__input" type="text">
           <button class="add-section__button">Add</button>
         </div>
-      </div>
-      <h3 class="todo-section__title">Todo</h3>
-      <ul id="todo-list" class="todo-section__list">
-        <li class="todo-section__list-item">
-          <input type="checkbox" class="todo-section__checkbox">
-          <label class="todo-section__label">Pay Bills</label>
-          <input type="text" class="todo-section__input">
-          <button class="todo-section__edit-button edit-button">Edit</button>
-          <button class="todo-section__delete-button delete-button">
-            <img class="todo-section__image" src="./remove.svg" alt="Remove button">
-          </button>
-        </li>
-        <li class="todo-section__list-item edit-mode">
-          <input type="checkbox" class="todo-section__checkbox">
-          <label class="todo-section__label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="todo-section__input">
-          <button class="todo-section__edit-button edit-button">Save</button>
-          <button class="todo-section__delete-button delete-button">
-            <img class="todo-section__image" src="./remove.svg" alt="Remove button">
-          </button>
-        </li>
-      </ul>
-      <h3 class="completed-section__title">Completed</h3>
-      <ul id="completed-tasks-list" class="completed-section__list">
-        <li class="completed-section__list-item">
-          <input type="checkbox" class="completed-section__checkbox" checked>
-          <label class="completed-section__label">See the Doctor</label>
-          <input type="text" class="completed-section__input">
-          <button class="completed-section__edit-button edit-button">Edit</button>
-          <button class="completed-section__delete-button delete-button">
-            <img class="completed-section__image" src="./remove.svg" alt="Remove button">
-          </button>
-        </li>
-      </ul>
+      </section>
+      <section>
+        <h3 class="todo-section__title">Todo</h3>
+        <ul id="todo-list" class="todo-section__list">
+          <li class="todo-section__list-item">
+            <input type="checkbox" class="todo-section__checkbox">
+            <label class="todo-section__label">Pay Bills</label>
+            <input type="text" class="todo-section__input">
+            <button class="todo-section__edit-button edit-button">Edit</button>
+            <button class="todo-section__delete-button delete-button">
+              <img class="todo-section__image" src="./remove.svg" alt="Remove button">
+            </button>
+          </li>
+          <li class="todo-section__list-item edit-mode">
+            <input type="checkbox" class="todo-section__checkbox">
+            <label class="todo-section__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="todo-section__input">
+            <button class="todo-section__edit-button edit-button">Save</button>
+            <button class="todo-section__delete-button delete-button">
+              <img class="todo-section__image" src="./remove.svg" alt="Remove button">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="completed-section__title">Completed</h3>
+        <ul id="completed-tasks-list" class="completed-section__list">
+          <li class="completed-section__list-item">
+            <input type="checkbox" class="completed-section__checkbox" checked>
+            <label class="completed-section__label">See the Doctor</label>
+            <input type="text" class="completed-section__input">
+            <button class="completed-section__edit-button edit-button">Edit</button>
+            <button class="completed-section__delete-button delete-button">
+              <img class="completed-section__image" src="./remove.svg" alt="Remove button">
+            </button>
+          </li>
+        </ul>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
